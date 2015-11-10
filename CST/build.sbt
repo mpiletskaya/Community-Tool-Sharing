@@ -15,3 +15,5 @@ libraryDependencies ++= Seq(
 // Play provides two styles of routers, one expects its actions to be injected, the
 // other, legacy style, accesses its actions statically.
 routesGenerator := InjectedRoutesGenerator
+
+web: target/universal/stage/bin/CST -Dhttp.port=${PORT} -Dplay.evolutions.db.default.autoApply=true
