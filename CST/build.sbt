@@ -16,4 +16,4 @@ libraryDependencies ++= Seq(
 // other, legacy style, accesses its actions statically.
 routesGenerator := InjectedRoutesGenerator
 
-web: target/universal/stage/bin/CST -Dhttp.port=${PORT} -Dplay.evolutions.db.default.autoApply=true
+
